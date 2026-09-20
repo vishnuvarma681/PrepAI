@@ -307,8 +307,8 @@ class _AnalysisLoadingStateWidgetState extends State<_AnalysisLoadingStateWidget
                 height: 120,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: AppColors.primary.withOpacity(0.1),
-                  border: Border.all(color: AppColors.primary.withOpacity(0.3), width: 2),
+                  color: AppColors.primary.withValues(alpha: 0.1),
+                  border: Border.all(color: AppColors.primary.withValues(alpha: 0.3), width: 2),
                 ),
                 child: const Center(
                   child: SizedBox(

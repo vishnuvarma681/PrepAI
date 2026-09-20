@@ -78,7 +78,7 @@ class _ResumeImprovementScreenState extends ConsumerState<ResumeImprovementScree
               
               // Dropdown Selection
               DropdownButtonFormField<String>(
-                value: _improvementType,
+                initialValue: _improvementType,
                 decoration: const InputDecoration(
                   labelText: 'Section Category',
                 ),
@@ -138,9 +138,9 @@ class _ResumeImprovementScreenState extends ConsumerState<ResumeImprovementScree
                   decoration: BoxDecoration(
                     gradient: AppColors.glassGradient,
                     borderRadius: BorderRadius.circular(12),
-                    border: Border.all(color: AppColors.primaryLight.withOpacity(0.5), width: 1.5),
+                    border: Border.all(color: AppColors.primaryLight.withValues(alpha: 0.5), width: 1.5),
                     boxShadow: [
-                      BoxShadow(color: AppColors.primary.withOpacity(0.05), blurRadius: 10, spreadRadius: 1),
+                      BoxShadow(color: AppColors.primary.withValues(alpha: 0.05), blurRadius: 10, spreadRadius: 1),
                     ],
                   ),
                   child: Column(
@@ -184,9 +184,9 @@ class _ResumeImprovementScreenState extends ConsumerState<ResumeImprovementScree
                 Container(
                   padding: const EdgeInsets.all(12),
                   decoration: BoxDecoration(
-                    color: AppColors.error.withOpacity(0.08),
+                    color: AppColors.error.withValues(alpha: 0.08),
                     borderRadius: BorderRadius.circular(8),
-                    border: Border.all(color: AppColors.error.withOpacity(0.3), width: 1),
+                    border: Border.all(color: AppColors.error.withValues(alpha: 0.3), width: 1),
                   ),
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,

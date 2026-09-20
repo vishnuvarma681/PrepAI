@@ -122,7 +122,7 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
           // Error warning
           if (chatState.error != null)
             Container(
-              color: AppColors.error.withOpacity(0.12),
+              color: AppColors.error.withValues(alpha: 0.12),
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
               child: Text(
                 'Connection failure: ${chatState.error}',
@@ -211,7 +211,7 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
               child: Text(
                 _formatTime(message.timestamp),
                 style: TextStyle(
-                  color: isUser ? Colors.white.withOpacity(0.6) : AppColors.textMuted,
+                  color: isUser ? Colors.white.withValues(alpha: 0.6) : AppColors.textMuted,
                   fontSize: 9,
                 ),
               ),

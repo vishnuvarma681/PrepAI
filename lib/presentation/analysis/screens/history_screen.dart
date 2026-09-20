@@ -64,7 +64,7 @@ class HistoryScreen extends ConsumerWidget {
                             height: 50,
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
-                              color: scoreColor.withOpacity(0.1),
+                              color: scoreColor.withValues(alpha: 0.1),
                               border: Border.all(color: scoreColor, width: 1.5),
                             ),
                             child: Center(

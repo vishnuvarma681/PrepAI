@@ -469,10 +469,10 @@ class AtsResultScreen extends ConsumerWidget {
                 runSpacing: 8,
                 children: skills.map((s) => Chip(
                       label: Text(s, style: const TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: Colors.white)),
-                      backgroundColor: chipColor.withOpacity(0.12),
+                      backgroundColor: chipColor.withValues(alpha: 0.12),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(8),
-                        side: BorderSide(color: chipColor.withOpacity(0.4), width: 1),
+                        side: BorderSide(color: chipColor.withValues(alpha: 0.4), width: 1),
                       ),
                     )).toList(),
               ),
