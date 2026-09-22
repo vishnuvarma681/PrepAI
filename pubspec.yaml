@@ -35,10 +35,13 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
   flutter_riverpod: ^3.3.2
-  file_picker: ^10.3.2
+  file_picker: ^8.0.7
   http: ^1.6.0
   google_fonts: ^8.2.0
   percent_indicator: ^4.2.5
+  audio_io: ^0.6.1
+  web_socket_channel: ^3.0.3
+  permission_handler: ^13.0.2
 
 dev_dependencies:
   flutter_test:

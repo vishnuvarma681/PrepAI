@@ -67,12 +67,12 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
                         children: [
                           Text(
                             user?.displayName ?? 'Developer User',
-                            style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 22),
+                            style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                           ),
                           const SizedBox(height: 4),
                           Text(
                             user?.email ?? 'developer@example.com',
-                            style: const TextStyle(color: AppColors.textSecondary, fontSize: 18),
+                            style: const TextStyle(color: AppColors.textSecondary, fontSize: 12),
                           ),
                         ],
                       ),
@@ -81,7 +81,7 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
                 ),
               ),
             ),
-            const SizedBox(height: 36),
+            const SizedBox(height: 24),
 
             // Logout Button
             ElevatedButton.icon(
